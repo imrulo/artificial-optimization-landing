@@ -1,0 +1,16 @@
+{
+  "name": "ArtificialOptimization.com - Premium AI Domain",
+  "short_name": "AI Optimization Domain",
+  "description": "Acquire the definitive digital asset for AI optimization and machine learning",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#D4AF37",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

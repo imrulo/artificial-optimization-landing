@@ -50,9 +50,9 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="max-w-5xl mx-auto"
           >
-            <h1 className="hero-title text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight px-4">
+            <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight px-4">
               Acquire{' '}
-              <span className="text-gradient block break-words hyphens-auto">
+              <span className="text-gradient block domain-title">
                 ArtificialOptimization.com
               </span>
             </h1>

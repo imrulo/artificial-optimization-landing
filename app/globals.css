@@ -35,4 +35,13 @@
   .text-gradient {
     @apply bg-gradient-to-r from-premium-gold to-yellow-500 bg-clip-text text-transparent;
   }
+  
+  /* Mobile text adjustments */
+  @media (max-width: 640px) {
+    .hero-title {
+      word-break: break-word;
+      hyphens: auto;
+      line-height: 1.1;
+    }
+  }
 }

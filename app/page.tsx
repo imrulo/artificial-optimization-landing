@@ -50,52 +50,52 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="max-w-5xl mx-auto"
           >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 leading-tight">
               Acquire{' '}
               <span className="text-gradient block">
                 ArtificialOptimization.com
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed px-4">
               The definitive digital asset for AI optimization, machine learning excellence, and business intelligence supremacy
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12 px-4">
               <motion.a
                 href="https://wa.link/6difl3"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary flex items-center gap-3 text-lg px-10 py-5"
+                className="btn-primary flex items-center gap-2 sm:gap-3 text-base sm:text-lg px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 w-full sm:w-auto justify-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <MessageCircle size={24} />
+                <MessageCircle size={20} className="sm:w-6 sm:h-6" />
                 Secure This Domain
               </motion.a>
               
               <motion.a
                 href="mailto:imrulo.eth@proton.me"
-                className="btn-secondary flex items-center gap-3 text-lg px-10 py-5"
+                className="btn-secondary flex items-center gap-2 sm:gap-3 text-base sm:text-lg px-6 sm:px-8 lg:px-10 py-3 sm:py-4 lg:py-5 w-full sm:w-auto justify-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Mail size={24} />
+                <Mail size={20} className="sm:w-6 sm:h-6" />
                 Make an Offer
               </motion.a>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-8 text-sm text-gray-400">
+            <div className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-8 text-xs sm:text-sm text-gray-400 px-4">
               <div className="flex items-center gap-2">
-                <Shield size={16} />
+                <Shield size={14} className="sm:w-4 sm:h-4" />
                 <span>Secure Escrow Transfer</span>
               </div>
               <div className="flex items-center gap-2">
-                <TrendingUp size={16} />
+                <TrendingUp size={14} className="sm:w-4 sm:h-4" />
                 <span>Premium Investment</span>
               </div>
               <div className="flex items-center gap-2">
-                <Star size={16} />
+                <Star size={14} className="sm:w-4 sm:h-4" />
                 <span>Brand Authority</span>
               </div>
             </div>
@@ -130,10 +130,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 px-4">
               Why <span className="text-gradient">ArtificialOptimization.com</span>?
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
               This premium domain represents the pinnacle of AI and optimization branding, 
               offering unparalleled strategic value for forward-thinking organizations.
             </p>
@@ -144,7 +144,7 @@ export default function Home() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8"
           >
             {[
               {
@@ -171,7 +171,7 @@ export default function Home() {
               <motion.div
                 key={index}
                 variants={fadeInUp}
-                className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10 hover:border-premium-gold/50 transition-all duration-300"
+                className="bg-white/5 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-white/10 hover:border-premium-gold/50 transition-all duration-300"
               >
                 <div className="mb-4">{benefit.icon}</div>
                 <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>
@@ -192,24 +192,24 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 px-4">
               Market <span className="text-gradient">Validation</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
               Data-driven insights demonstrating the exceptional value and market potential of this premium domain.
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
             {/* Keyword Analysis */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10"
+              className="bg-white/5 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-white/10"
             >
-              <h3 className="text-2xl font-bold mb-6 text-center">High-Value Keywords</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center">High-Value Keywords</h3>
               <div className="space-y-4">
                 {[
                   { keyword: "artificial optimization", volume: "12,100", cpc: "$8.50" },
@@ -218,11 +218,11 @@ export default function Home() {
                   { keyword: "business intelligence optimization", volume: "4,400", cpc: "$9.80" },
                   { keyword: "algorithm optimization", volume: "3,300", cpc: "$11.50" }
                 ].map((item, index) => (
-                  <div key={index} className="flex justify-between items-center py-3 border-b border-white/10 last:border-b-0">
-                    <span className="font-medium">{item.keyword}</span>
-                    <div className="text-right">
-                      <div className="text-premium-gold font-semibold">{item.volume} searches/mo</div>
-                      <div className="text-sm text-gray-400">${item.cpc} CPC</div>
+                  <div key={index} className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-white/10 last:border-b-0 gap-2 sm:gap-0">
+                    <span className="font-medium text-sm sm:text-base">{item.keyword}</span>
+                    <div className="text-left sm:text-right">
+                      <div className="text-premium-gold font-semibold text-sm sm:text-base">{item.volume} searches/mo</div>
+                      <div className="text-xs sm:text-sm text-gray-400">${item.cpc} CPC</div>
                     </div>
                   </div>
                 ))}
@@ -235,9 +235,9 @@ export default function Home() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10"
+              className="bg-white/5 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-white/10"
             >
-              <h3 className="text-2xl font-bold mb-6 text-center">Recent Premium Sales</h3>
+              <h3 className="text-xl sm:text-2xl font-bold mb-6 text-center">Recent Premium Sales</h3>
               <div className="space-y-4">
                 {[
                   { domain: "AIStrategy.com", price: "$45,000", year: "2023" },
@@ -246,11 +246,11 @@ export default function Home() {
                   { domain: "AlgorithmAI.com", price: "$32,800", year: "2022" },
                   { domain: "SmartOptimization.com", price: "$18,900", year: "2023" }
                 ].map((sale, index) => (
-                  <div key={index} className="flex justify-between items-center py-3 border-b border-white/10 last:border-b-0">
-                    <span className="font-mono text-sm">{sale.domain}</span>
-                    <div className="text-right">
-                      <div className="text-premium-gold font-bold">${sale.price}</div>
-                      <div className="text-sm text-gray-400">{sale.year}</div>
+                  <div key={index} className="flex flex-col sm:flex-row sm:justify-between sm:items-center py-3 border-b border-white/10 last:border-b-0 gap-2 sm:gap-0">
+                    <span className="font-mono text-xs sm:text-sm">{sale.domain}</span>
+                    <div className="text-left sm:text-right">
+                      <div className="text-premium-gold font-bold text-sm sm:text-base">${sale.price}</div>
+                      <div className="text-xs sm:text-sm text-gray-400">{sale.year}</div>
                     </div>
                   </div>
                 ))}
@@ -270,10 +270,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 px-4">
               Strategic <span className="text-gradient">Applications</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
               Discover how this premium domain can transform your organization's digital presence and market positioning.
             </p>
           </motion.div>
@@ -285,7 +285,8 @@ export default function Home() {
             viewport={{ once: true }}
             className="bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden border border-white/10"
           >
-            <div className="overflow-x-auto">
+            {/* Desktop Table */}
+            <div className="hidden lg:block overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-premium-gold/10">
                   <tr>
@@ -336,6 +337,49 @@ export default function Home() {
                 </tbody>
               </table>
             </div>
+
+            {/* Mobile Cards */}
+            <div className="lg:hidden">
+              {[
+                {
+                  industry: "AI Consulting Firm",
+                  application: "Establish thought leadership and attract enterprise clients seeking optimization expertise"
+                },
+                {
+                  industry: "SaaS Platform",
+                  application: "Launch AI-powered optimization tools with instant brand credibility and SEO advantage"
+                },
+                {
+                  industry: "Venture Capital",
+                  application: "Portfolio company branding and investment thesis validation in AI optimization space"
+                },
+                {
+                  industry: "Enterprise Software",
+                  application: "Corporate AI initiatives and internal optimization platform development"
+                },
+                {
+                  industry: "Research Institute",
+                  application: "Academic publications, conferences, and industry collaboration platform"
+                },
+                {
+                  industry: "Marketing Agency",
+                  application: "AI-driven campaign optimization services and client acquisition"
+                },
+                {
+                  industry: "Financial Services",
+                  application: "Algorithmic trading optimization and risk management AI solutions"
+                },
+                {
+                  industry: "Healthcare Technology",
+                  application: "Medical AI optimization and clinical decision support systems"
+                }
+              ].map((useCase, index) => (
+                <div key={index} className="border-b border-white/10 last:border-b-0 p-6">
+                  <h3 className="font-semibold text-lg text-premium-gold mb-3">{useCase.industry}</h3>
+                  <p className="text-gray-300 text-sm leading-relaxed">{useCase.application}</p>
+                </div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </section>
@@ -350,15 +394,15 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 px-4">
               Secure <span className="text-gradient">Transaction</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
               Your investment is protected with industry-leading security and transparent processes.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-16">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -439,10 +483,10 @@ export default function Home() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 px-4">
               Frequently Asked <span className="text-gradient">Questions</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
               Everything you need to know about acquiring this premium domain.
             </p>
           </motion.div>
@@ -480,7 +524,7 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white/5 backdrop-blur-sm rounded-xl p-8 border border-white/10"
+                className="bg-white/5 backdrop-blur-sm rounded-xl p-6 sm:p-8 border border-white/10"
               >
                 <h3 className="text-xl font-semibold mb-4 text-premium-gold">{faq.question}</h3>
                 <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
@@ -495,16 +539,17 @@ export default function Home() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1 }}
-        className="fixed bottom-6 right-6 z-50"
+        className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50"
       >
         <a
           href="https://wa.link/6difl3"
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-primary flex items-center gap-3 shadow-2xl"
+          className="btn-primary flex items-center gap-2 sm:gap-3 shadow-2xl text-sm sm:text-base px-4 sm:px-6 py-3 sm:py-4"
         >
-          <MessageCircle size={20} />
-          Secure Domain
+          <MessageCircle size={16} className="sm:w-5 sm:h-5" />
+          <span className="hidden sm:inline">Secure Domain</span>
+          <span className="sm:hidden">Secure</span>
         </a>
       </motion.div>
 
